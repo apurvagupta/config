@@ -1,0 +1,20 @@
+ [alias]
+       st = status
+       ci = commit
+       co = checkout
+       pl = "pull --rebase"
+       pom = push origin master
+       cp = cherry-pick
+[core]
+	excludesfile = /Users/apurvagu/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = apurvagu
+	email = apurvagu@thoughtworks.com
+[init]
+	templatedir = /Users/apurvagu/.git-templates
